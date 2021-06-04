@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <meta id="test_meta" data="{{ context.test_meta }}" >
+    </head>
+    <body>
+        <form action="/" method="post" >
+            <div>{{form.text1.label}}<br>{{ form.text1(size=32) }}</div>
+            <div>{{form.text2.label}}<br>{{ form.text2(size=32) }}</div>
+            <div>{{ form.submit() }}</div>
+        </form>
+    </body>
+</html>
